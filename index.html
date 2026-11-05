@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pola Invitation</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<section class="hero">
+
+    <!-- MARCO DECORATIVO DE LA PORTADA -->
+    <div class="marco-portada">
+
+        <span class="esquina-marco superior-izquierda"></span>
+        <span class="esquina-marco superior-derecha"></span>
+        <span class="esquina-marco inferior-izquierda"></span>
+        <span class="esquina-marco inferior-derecha"></span>
+
+    </div>
+
+    <!-- CONTENIDO DE LA PORTADA -->
+    <div class="hero-contenido">
+
+        <p class="etiqueta-boda">NUESTRA BODA</p>
+
+        <h2 id="nombreEvento">Abe & Jess</h2>
+
+        <div class="adorno-portada"></div>
+
+       <!-- FOTOGRAFÍA Y RAMO DECORATIVO -->
+<div class="foto-con-ramo">
+
+    <div class="foto-portada">
+        <img src="portada/abe-jess.jpg" alt="Abe y Jess">
+    </div>
+
+    <img src="assets/ramo-verde.png"
+         class="ramo-portada"
+         alt="">
+
+</div>
+
+        <!-- CONTADOR -->
+        <div class="contador-portada">
+
+            <p class="fecha-portada">
+                27 DE DICIEMBRE DE 2026
+            </p>
+
+            <h3>Faltan</h3>
+
+            <div class="contador">
+
+                <div class="tiempo">
+                    <span id="dias">00</span>
+                    <small>Días</small>
+                </div>
+
+                <div class="tiempo">
+                    <span id="horas">00</span>
+                    <small>Horas</small>
+                </div>
+
+                <div class="tiempo">
+                    <span id="minutos">00</span>
+                    <small>Minutos</small>
+                </div>
+
+                <div class="tiempo">
+                    <span id="segundos">00</span>
+                    <small>Segundos</small>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button class="boton-musica-portada" id="musica">
+            <i class="fa-solid fa-music"></i>
+            <span>REPRODUCIR NUESTRA CANCIÓN</span>
+        </button>
+
+        <a href="#nombresNovios" id="btnInvitacion">
+            Ver invitación
+        </a>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     NOMBRES DE LOS NOVIOS
+========================================= -->
+
+<section id="nombresNovios" data-aos="fade-up">
+
+    <div class="titulo-seccion">
+
+        <span>UNIDOS POR EL AMOR</span>
+
+        <h2 id="nombresCompletos"></h2>
+
+        <div class="regalos-separador">
+            ✦
+        </div>
+
+        <p id="fraseNombres"></p>
+
+        <span>27 DE DICIEMBRE DE 2026</span>
+
+    </div>
+
+</section>
+
+
+<section id="recepcion" data-aos="fade-left">
+
+    <div class="titulo-seccion">
+
+        <span>EL GRAN DÍA</span>
+
+        <h2>La celebración</h2>
+
+    </div>
+
+    <div class="card-evento">
+
+        <div class="icono-evento">
+            <i class="fa-solid fa-champagne-glasses"></i>
+        </div>
+
+        <h3 id="salonEvento"></h3>
+
+        <p id="horaRecepcion"></p>
+
+        <p>
+            Queremos compartir contigo la alegría de este día
+            tan especial en nuestras vidas.
+        </p>
+
+        <a href="#" class="btn-evento" id="btnMapaRecepcion">
+            Cómo llegar
+        </a>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     NUESTRA HISTORIA
+========================================= -->
+
+<section id="historia" data-aos="fade-up">
+
+    <div class="titulo-seccion">
+
+        <span>UNA HISTORIA DE AMOR</span>
+
+        <h2>Nuestra historia</h2>
+
+        <div class="regalos-separador">
+            ✦
+        </div>
+
+        <h3 id="tituloNacimiento">
+            Dos corazones, un mismo camino
+        </h3>
+
+        <p id="textoNacimiento"></p>
+
+        <div class="regalos-separador">
+            ✦
+        </div>
+
+        <h3>Y nuestra historia continúa...</h3>
+
+        <p>
+            Hoy queremos celebrar este amor rodeados de las
+            personas que forman parte de nuestras vidas.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     PADRES Y PADRINOS
+========================================= -->
+
+<section id="papas" data-aos="fade-up">
+
+    <div class="titulo-seccion">
+
+        <span>EN ESTE DÍA TAN ESPECIAL</span>
+        <h2>Con amor</h2>
+
+    </div>
+
+   <div class="familia-card">
+
+    <!-- PADRES DE LA NOVIA -->
+
+    <div class="familia-bloque">
+
+        <span class="familia-subtitulo">
+            PADRES DE LA NOVIA
+        </span>
+
+        <h3 id="padreNovia"></h3>
+        <h3 id="madreNovia"></h3>
+
+    </div>
+
+    <div class="familia-separador">
+        ✦
+    </div>
+
+    <!-- PADRES DEL NOVIO -->
+
+    <div class="familia-bloque">
+
+        <span class="familia-subtitulo">
+            PADRES DEL NOVIO
+        </span>
+
+        <h3 id="padreNovio"></h3>
+        <h3 id="madreNovio"></h3>
+
+    </div>
+
+    <div class="familia-separador">
+        ✦
+    </div>
+
+    <p>
+        Gracias por su amor, sus enseñanzas y por acompañarnos
+        en este camino tan especial.
+    </p>
+
+</div>
+
+    <div id="seccionSoloPadrinos">
+
+    <div class="titulo-seccion">
+
+        <span>PERSONAS ESPECIALES</span>
+
+        <h2>Nuestros padrinos</h2>
+
+        <div id="listaPadrinos"></div>
+
+    </div>
+
+    <div id="contenedorPadrinos" class="contenedor-padrinos"></div>
+
+</div>
+
+</section>
+
+<!-- =========================================
+     DETALLES PARA LOS NOVIOS
+========================================= -->
+
+<section id="regalos" data-aos="fade-up">
+
+    <div class="titulo-seccion">
+
+        <span>UN DETALLE ESPECIAL</span>
+
+        <h2>Un detalle para los novios</h2>
+
+    </div>
+
+    <div class="regalos-card">
+
+        <div class="regalos-icono">
+            <i class="fa-solid fa-gift"></i>
+        </div>
+
+                <p>
+            El regalo más valioso para nosotros es contar
+            con tu presencia en este día tan especial.
+        </p>
+
+        <p>
+            Si deseas tener un detalle con nosotros, será
+            recibido con mucho cariño. Tu obsequio es libre,
+            lo que nazca de tu corazón será bienvenido.
+        </p>
+
+        <div class="regalos-separador">
+            ✦
+        </div>
+
+        <p class="regalos-final">
+            Gracias por acompañarnos y ser parte de nuestra historia.
+        </p>
+
+    </div>
+
+</section>
+
+<section id="agenda" data-aos="fade-up">
+
+    <div class="titulo-seccion">
+
+        <span>PROGRAMA</span>
+
+        <h2>Agenda del Evento</h2>
+
+    </div>
+
+    <div class="timeline" id="timeline">
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     CONFIRMACIÓN DE ASISTENCIA
+========================================= -->
+
+<section id="confirmacion" data-aos="fade-up">
+
+    <div class="titulo-seccion">
+
+        <span>CONFIRMA TU ASISTENCIA</span>
+
+        <h2>¿Nos acompañarás?</h2>
+
+    </div>
+
+    <div class="card-confirmacion">
+
+        <p>
+            Será una alegría compartir contigo este día tan
+            especial. Por favor, ayúdanos confirmando tu asistencia.
+        </p>
+
+        <input
+            type="text"
+            id="nombreInvitado"
+            placeholder="Nombre de quien confirma"
+        >
+
+        <label>Adultos</label>
+
+        <div class="contador-personas">
+
+            <button type="button" id="menosAdultos">−</button>
+
+            <span id="adultos">1</span>
+
+            <button type="button" id="masAdultos">+</button>
+
+        </div>
+
+        <label>Niños</label>
+
+        <div class="contador-personas">
+
+            <button type="button" id="menosNinos">−</button>
+
+            <span id="ninos">0</span>
+
+            <button type="button" id="masNinos">+</button>
+
+        </div>
+
+        <button id="confirmarWhatsapp">
+            Confirmar asistencia
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================================
+     CIERRE DE LA INVITACIÓN
+========================================= -->
+
+<section id="cierre" data-aos="fade-up">
+
+    <div class="cierre-contenido">
+
+        <span class="cierre-subtitulo">
+            GRACIAS POR ACOMPAÑARNOS
+        </span>
+
+        <div class="cierre-adorno">
+            ✦
+        </div>
+
+        <h2>
+            Un día para celebrar,
+            una vida para compartir.
+        </h2>
+
+        <p>
+            Gracias por acompañarnos en este día tan especial
+            y por formar parte de los recuerdos que construiremos
+            juntos. Nos alegra compartir nuestra felicidad contigo.
+        </p>
+
+        <div class="cierre-linea"></div>
+
+        <span class="cierre-firma">
+            Con cariño,
+        </span>
+
+        <h3 id="nombreCierre">
+            Abe & Jess
+        </h3>
+
+    </div>
+
+    <div class="firma-creador">
+        <img src="logo/pola-life-memories.png" alt="Pola Life Memories">
+    </div>
+
+</section>
+
+<audio id="musicaFondo" loop></audio>
+
+<script src="js/config.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

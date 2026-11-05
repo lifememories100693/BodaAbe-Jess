@@ -1,0 +1,5273 @@
+/* =========================================
+   PALETA DE COLORES - ABE & JESS
+========================================= */
+
+:root {
+    --verde: #A8B86A;
+    --dorado: #C6A04A;
+    --marfil: #FAF8F0;
+    --cafe: #594536;
+
+    --fondo-principal: var(--marfil);
+    --texto-principal: var(--cafe);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+
+    font-family:'Montserrat', sans-serif;
+
+}
+
+#btnInvitacion:hover {
+    background: #d4af37;
+    color: white;
+    transform: translateY(-3px);
+}
+   
+ /*=========================================
+  CUENTA REGRESIVA
+=========================================*/
+
+#contador {
+    padding: 70px 20px 90px;
+
+    background: #FFFEFC;
+
+    text-align: center;
+}
+
+/* =========================================
+   TÍTULO DEL CONTADOR
+========================================= */
+
+#contador h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 58px;
+
+    font-weight: 500;
+
+    color: #2f3a32;
+
+    letter-spacing: 2px;
+
+    margin: 5px 0 35px;
+
+    position: relative;
+}
+
+/* =========================================
+   FECHA DECORATIVA
+========================================= */
+
+.fecha-decorada {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    width: 100%;
+
+    margin-bottom: 15px;
+}
+
+.fecha-decorada span {
+    display: block;
+
+    width: 60px;
+
+    height: 1px;
+
+    background: #FFFEFC;
+
+    opacity: 0.6;
+}
+
+.fecha-decorada p {
+    margin: 0;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 2rem;
+
+    letter-spacing: 3px;
+
+    font-weight: 600;
+
+    text-align: center;
+
+    background: #FFFEFC;
+}
+
+/* =========================================
+   DETALLE DORADO
+========================================= */
+
+#contador h2::after {
+    content: "✦";
+
+    display: block;
+
+    color: #d4af37;
+
+    font-size: 20px;
+
+    margin-top: 12px;
+}
+
+/* =========================================
+   CONTENEDOR DE TIEMPOS
+========================================= */
+
+.contador {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.tiempo {
+    width: 150px;
+
+    padding: 30px 20px;
+
+    background: rgba(255, 255, 255, 0.82);
+
+    border: 1px solid rgba(212, 175, 55, 0.45);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08),
+        inset 0 0 20px rgba(212, 175, 55, 0.05);
+
+    backdrop-filter: blur(6px);
+
+    transition: all 0.3s ease;
+}
+
+/* =========================================
+   EFECTO HOVER
+========================================= */
+
+.tiempo:hover {
+    transform: translateY(-6px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12),
+        0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+/* =========================================
+   NÚMEROS
+========================================= */
+
+.tiempo span {
+    display: block;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 58px;
+
+    font-weight: 600;
+
+    color: #91AD55
+
+    line-height: 1;
+}
+
+/* =========================================
+   ETIQUETAS
+========================================= */
+
+.tiempo small {
+    display: block;
+
+    margin-top: 12px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+    color: #777;
+}
+
+/* =========================================
+   CONTADOR — CELULAR
+========================================= */
+
+ {
+
+    #contador {
+        padding: 70px 15px;
+    }
+
+    #contador h2 {
+        font-size: 45px;
+
+        margin-bottom: 28px;
+    }
+
+    .fecha-decorada {
+        gap: 10px;
+    }
+
+    .fecha-decorada span {
+        width: 35px;
+    }
+
+    .fecha-decorada p {
+        font-size: 1.45rem;
+
+        letter-spacing: 2px;
+    }
+
+    .contador {
+        gap: 12px;
+
+        max-width: 100%;
+    }
+
+    .tiempo {
+        width: 105px;
+
+        padding: 22px 12px;
+    }
+
+    .tiempo span {
+        font-size: 42px;
+    }
+
+    .tiempo small {
+        font-size: 9px;
+
+        letter-spacing: 2px;
+    }
+
+}
+
+/*=========================================
+  RESPONSIVE
+=========================================*/
+
+@media (max-width: 768px){
+
+    .hero h2{
+        font-size:60px;
+    }
+
+    .hero p{
+        font-size:18px;
+        width:90%;
+    }
+
+    .btn{
+        padding:16px 35px;
+        font-size:16px;
+    }
+
+    #contador h2{
+        font-size:42px;
+    }
+
+    .tiempo{
+        width:120px;
+        padding:20px;
+    }
+
+    .tiempo span{
+        font-size:40px;
+    }
+
+}
+/*=========================================
+ANIMACIONES
+=========================================*/
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes bajar {
+
+    0%, 100% {
+        transform: translateY(0);
+        opacity: .5;
+    }
+
+    50% {
+        transform: translateY(12px);
+        opacity: 1;
+    }
+
+}
+
+@keyframes zoomHero {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#btnInvitacion:hover{
+
+    transform:translateY(-5px) scale(1.03);
+
+    background:white;
+
+    color:#222;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 30px rgba(0,0,0,.25);   
+
+}
+
+/*=========================================
+  MENU FLOTANTE
+=========================================*/
+
+.menu-flotante {
+    position: fixed;
+
+    right: 25px;
+    bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+
+    z-index: 999;
+}
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.fab {
+    background: white;
+    color: #222;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+/* =========================================
+   EFECTO GENERAL
+========================================= */
+
+.fab:hover {
+    transform: translateY(-5px) scale(1.08);
+
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.30);
+}
+
+/* =========================================
+   MÚSICA Y UBICACIÓN
+========================================= */
+
+#musica:hover,
+#ubicacion:hover {
+    background: #d4af37;
+    color: white;
+}
+
+/* =========================================
+   WHATSAPP
+========================================= */
+
+#whatsapp:hover {
+    background: #25D366;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    .menu-flotante .fab {
+        width: 35px;
+        height: 35px;
+        font-size: 17px;
+    }
+
+}
+
+/*=========================================
+  CEREMONIA
+=========================================*/
+
+#ceremonia {
+    padding: 120px 20px;
+
+    background: #f9f9f9;
+
+    text-align: center;
+}
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+#ceremonia h2 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 60px;
+
+    font-weight: 500;
+
+    margin-bottom: 60px;
+}
+
+/* =========================================
+   TARJETA DEL EVENTO
+========================================= */
+
+.card-evento {
+    width: 650px;
+
+    max-width: 90%;
+
+    margin: auto;
+
+    padding: 70px 50px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08);
+
+    transition: all 0.4s ease;
+}
+
+/* =========================================
+   EFECTO HOVER
+========================================= */
+
+.card-evento:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 30px 80px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.card-evento h3 {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 34px;
+
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+.card-evento p {
+    font-size: 22px;
+
+    line-height: 1.6;
+
+    margin: 12px 0;
+}
+
+/* =========================================
+   ICONO
+========================================= */
+
+.icono-evento {
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 35px;
+
+    border-radius: 50%;
+
+    background: #d4af37;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 38px;
+}
+
+/* =========================================
+   BOTÓN
+========================================= */
+
+.btn-evento {
+    display: inline-block;
+
+    margin-top: 40px;
+
+    padding: 18px 45px;
+
+    background: #d4af37;
+
+    color: white;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.btn-evento:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(212, 175, 55, 0.25);
+}
+
+/*==============================
+ TITULO DE SECCIÓN
+==============================*/
+
+.titulo-seccion{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.titulo-seccion span{
+
+    color:#d4af37;
+
+    letter-spacing:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.titulo-seccion h2{
+
+    font-family:'Cormorant Garamond', serif;
+
+    font-size:60px;
+
+    margin-top:15px;
+
+    color: #FFFEFC;
+
+}
+
+.icono-evento{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:38px;
+
+}
+
+/*=========================================
+ RECEPCIÓN
+=========================================*/
+
+#recepcion{
+
+    padding:120px 20px;
+
+    background:#FFFEFC;
+
+    text-align:center;
+
+}
+
+/*=========================================
+  GALERÍA
+=========================================*/
+
+#galeria {
+    padding: 120px 20px;
+
+    background: #faf8f5;
+}
+
+/* =========================================
+   GALERÍA
+========================================= */
+
+.grid-galeria {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 25px;
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+/* =========================================
+   FOTOGRAFÍAS
+========================================= */
+
+.grid-galeria img {
+    width: 100%;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.08);
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+
+/* =========================================
+   EFECTO HOVER
+========================================= */
+
+.grid-galeria img:hover {
+
+    transform: scale(1.05);
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================
+   GALERÍA — CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    #galeria {
+        padding: 80px 15px;
+    }
+
+    .grid-galeria {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+    .grid-galeria img {
+
+        height: 300px;
+
+        border-radius: 18px;
+    }
+
+}
+
+
+/* =========================================
+   LIGHTBOX
+========================================= */
+
+#lightbox {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background: rgba(0,0,0,.92);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 9999;
+}
+
+
+#lightbox img {
+
+    max-width: 90%;
+
+    max-height: 85%;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35);
+
+    animation:
+        zoomImagen .35s ease;
+}
+
+
+#cerrar {
+
+    position: absolute;
+
+    top: 25px;
+
+    right: 35px;
+
+    font-size: 55px;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+
+@keyframes zoomImagen {
+
+    from {
+
+        transform: scale(.8);
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+/*=========================================
+ CONFIRMACIÓN
+=========================================*/
+
+#confirmacion{
+
+    padding:120px 20px;
+
+    background:#FFFEFC;
+
+}
+
+.card-confirmacion{
+
+    max-width:650px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:30px;
+
+    padding:50px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.08);
+
+}
+
+.card-confirmacion p{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.card-confirmacion input{
+
+    width:100%;
+
+    padding:18px;
+
+    border:1px solid #ddd;
+
+    border-radius:15px;
+
+    font-size:16px;
+
+    margin-bottom:30px;
+
+}
+
+.contador-personas{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin:20px 0 35px;
+
+}
+
+.contador-personas button{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#d4af37;
+
+    color:white;
+
+    font-size:24px;
+
+    cursor:pointer;
+
+}
+
+.contador-personas span{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+#confirmarWhatsapp{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#25D366;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+}
+
+
+/*=========================================
+AGENDA
+=========================================*/
+
+#agenda {
+    padding: 120px 20px;
+    background: #FFFEFC;
+}
+
+.timeline {
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 130px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #D4AF37;
+}
+
+
+.evento {
+    display: grid;
+    grid-template-columns: 90px minmax(0, 1fr);
+    column-gap: 25px;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.hora {
+    width: 110px;
+    font-weight: bold;
+    color: #91AD55;
+    text-align: right;
+    padding-top: 25px;
+}
+
+.contenido {
+    background: #A8B86A;
+    padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #879A50;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+}
+
+.contenido h3 {
+    margin-bottom: 10px;
+    color: #35452B;
+}
+
+
+/*=========================================
+   NUESTRA HISTORIA
+=========================================*/
+
+#historia {
+    padding: 120px 20px;
+    background: #faf8f5;
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.historia-contenedor {
+    max-width: 900px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+
+/* =========================================
+   LÍNEA CENTRAL
+========================================= */
+
+.historia-contenedor::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: #d4af37;
+
+    transform: translateX(-50%);
+
+    z-index: 0;
+}
+
+
+/* =========================================
+   MOMENTO
+========================================= */
+
+.historia-item {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    margin-bottom: 90px;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   GALERÍA
+========================================= */
+
+.historia-imagen {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+
+/* FOTO GRANDE */
+
+#historia .historia-imagen > img {
+    width: 100%;
+    max-width: 350px;
+    height: 230px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    background: #f5f2ed;
+}
+
+
+/* MINIATURAS */
+
+.historia-miniaturas {
+    width: 100%;
+    max-width: 350px;
+
+    margin: 10px auto 0;
+
+    display: flex;
+
+    gap: 8px;
+
+    overflow-x: auto;
+
+    padding: 3px 2px 7px;
+
+    scrollbar-width: none;
+
+    -webkit-overflow-scrolling: touch;
+}
+
+.historia-miniaturas::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* MINIATURA */
+
+.historia-miniatura {
+    width: 65px;
+    min-width: 65px;
+
+    height: 65px;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    opacity: 0.55;
+
+    border: 2px solid transparent;
+
+    transition:
+        opacity 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* MINIATURA ACTIVA */
+
+.historia-miniatura.activa {
+    opacity: 1;
+
+    border-color: #d4af37;
+
+    transform: scale(1.04);
+}
+
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.historia-texto {
+    padding: 10px;
+}
+
+.historia-texto span,
+.historia-final span {
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #d4af37;
+
+    font-weight: bold;
+}
+
+.historia-texto h3,
+.historia-final h3 {
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 34px;
+
+    margin: 10px 0 15px;
+}
+
+.historia-texto p,
+.historia-final p {
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #555;
+}
+
+
+/* =========================================
+   HISTORIA REVERSA
+========================================= */
+
+.historia-reversa .historia-imagen {
+    order: 2;
+}
+
+.historia-reversa .historia-texto {
+    order: 1;
+
+    text-align: right;
+}
+
+
+/* =========================================
+   PUNTO CENTRAL
+========================================= */
+
+.historia-item::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 14px;
+    height: 14px;
+
+    background: #d4af37;
+
+    border: 4px solid #faf8f5;
+
+    border-radius: 50%;
+
+    transform: translate(-50%, -50%);
+
+    z-index: 2;
+
+    box-shadow:
+        0 0 0 1px #d4af37;
+}
+
+
+/* =========================================
+   FINAL
+========================================= */
+
+.historia-final {
+
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    position: relative;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.08);
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    #historia {
+        padding: 80px 15px;
+    }
+
+
+    .historia-contenedor {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 40px auto 0;
+    }
+
+
+    /* LÍNEA CENTRAL */
+
+    .historia-contenedor::before {
+
+        display: block;
+
+        left: 50%;
+
+        width: 2px;
+
+        background: #d4af37;
+    }
+
+
+    /* MOMENTOS */
+
+    .historia-item {
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 22px;
+
+        width: 100%;
+
+        margin-bottom: 65px;
+    }
+
+
+    /* FOTO GRANDE */
+
+    .historia-foto-principal {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        height: 180px;
+
+        border-radius: 14px;
+    }
+
+
+    /* MINIATURAS */
+
+    .historia-miniaturas {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        gap: 6px;
+
+        overflow-x: auto;
+    }
+
+
+    .historia-miniatura {
+
+        width: 58px;
+
+        min-width: 58px;
+
+        height: 58px;
+
+        border-radius: 8px;
+    }
+
+
+    /* TEXTO */
+
+    .historia-texto {
+
+        width: 100%;
+
+        padding: 0 5px;
+
+        text-align: left;
+    }
+
+
+    .historia-texto span,
+    .historia-final span {
+
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .historia-texto h3,
+    .historia-final h3 {
+
+        font-size: 25px;
+
+        line-height: 1.1;
+
+        margin: 7px 0 10px;
+    }
+
+
+    .historia-texto p,
+    .historia-final p {
+
+        font-size: 12px;
+
+        line-height: 1.55;
+    }
+
+
+    /* REVERSA */
+
+    .historia-reversa .historia-imagen {
+
+        order: 2;
+    }
+
+    .historia-reversa .historia-texto {
+
+        order: 1;
+
+        text-align: right;
+    }
+
+
+    /* PUNTO */
+
+    .historia-item::after {
+
+        width: 10px;
+
+        height: 10px;
+
+        border: 3px solid #faf8f5;
+
+        box-shadow:
+            0 0 0 1px #d4af37;
+    }
+
+
+    /* FINAL */
+
+    .historia-final {
+
+        width: 90%;
+
+        max-width: 500px;
+
+        padding: 25px 15px;
+    }
+
+}
+
+/*=========================================*
+* PADRES Y PADRINOS *
+*=========================================*/
+
+#familia {
+    padding: 120px 20px;
+    background: #FFFEFC;
+}
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.familia-card {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 60px auto 0;
+
+    padding: 55px 50px;
+
+    box-sizing: border-box;
+
+    background: #f5f0e6;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+
+    position: relative;
+}
+
+/* =========================================
+   SUBTÍTULO
+========================================= */
+
+.familia-subtitulo {
+    display: block;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    color: #91AD55;
+
+    font-weight: bold;
+
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   BLOQUES
+========================================= */
+
+.familia-bloque h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    margin: 5px 0;
+
+    color: #2f3a32;
+}
+
+.familia-bloque p {
+    max-width: 500px;
+
+    margin: 20px auto 0;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #2f3a32;
+}
+
+/* =========================================
+   SEPARADOR
+========================================= */
+
+.familia-separador {
+    margin: 40px 0;
+
+    color: #91AD55;
+
+
+    font-size: 22px;
+
+    letter-spacing: 8px;
+}
+
+/* =========================================
+   PADRINOS — NOMBRAMIENTOS
+========================================= */
+
+#listaPadrinos {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 28px;
+
+    margin-top: 35px;
+}
+
+.padrino-card {
+    position: relative;
+
+    text-align: center;
+
+    padding: 28px 20px;
+
+    max-width: 600px;
+
+    margin: 0 auto;
+}
+
+/* Detalle superior */
+
+.padrino-card::before {
+    content: "✦";
+
+    display: block;
+
+    color: #d4af37;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+}
+
+/* Línea inferior */
+
+.padrino-card::after {
+    content: "";
+
+    display: block;
+
+    width: 70px;
+
+    height: 1px;
+
+    background: #d4af37;
+
+    margin: 18px auto 0;
+}
+
+/* Texto inicial */
+
+.texto-nombramiento {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    font-style: italic;
+
+    color: #2f3a32;
+
+    margin: 0 0 8px;
+}
+
+/* Tipo de padrino */
+
+.padrino-card h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 26px;
+
+    font-weight: 600;
+
+    color: #91AD55;
+
+margin: 0;
+
+    margin: 0;
+}
+
+/* Nombre */
+
+.nombre-padrino {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 23px;
+
+    color: #2f3a32;
+
+    margin: 10px 0 0;
+
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   PADRES Y PADRINOS — CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    #familia {
+        padding: 80px 15px;
+    }
+
+    .familia-card {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin-top: 40px;
+
+        padding: 40px 25px;
+
+        border-radius: 20px;
+    }
+
+    .familia-subtitulo {
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+    .familia-bloque h3 {
+        font-size: 25px;
+
+        line-height: 1.2;
+    }
+
+    .familia-bloque p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .familia-separador {
+        margin: 30px 0;
+    }
+
+    #listaPadrinos {
+        gap: 20px;
+
+        margin-top: 30px;
+    }
+
+    .padrino-card {
+        padding: 25px 10px;
+    }
+
+    .texto-nombramiento {
+        font-size: 18px;
+    }
+
+    .padrino-card h3 {
+        font-size: 23px;
+    }
+
+    .nombre-padrino {
+        font-size: 21px;
+
+        line-height: 1.3;
+    }
+
+}
+
+ /*=========================================*
+* UN DETALLE PARA ELENA *
+*=========================================*/
+
+#regalos {
+    padding: 120px 20px;
+
+    background: #faf8f5;
+
+    text-align: center;
+}
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.regalos-card {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 60px auto 0;
+
+    padding: 55px 50px;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+/* =========================================
+   ICONO
+========================================= */
+
+.regalos-icono {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 50%;
+
+    color: #d4af37;
+
+    font-size: 25px;
+}
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.regalos-card p {
+    max-width: 520px;
+
+    margin: 0 auto 20px;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #2f3a32;
+}
+
+/* =========================================
+   SEPARADOR
+========================================= */
+
+.regalos-separador {
+    margin: 30px 0;
+
+    color: #d4af37;
+
+    font-size: 20px;
+
+    letter-spacing: 8px;
+}
+
+/* =========================================
+   FRASE FINAL
+========================================= */
+
+.regalos-final {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px !important;
+
+    color:#FFFEFC; !important;
+}
+/* =========================================
+   REGALOS — CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    #regalos {
+        padding: 80px 15px;
+    }
+
+    .regalos-card {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin-top: 40px;
+
+        padding: 40px 25px;
+
+        border-radius: 20px;
+    }
+
+    .regalos-icono {
+        width: 60px;
+        height: 60px;
+
+        font-size: 22px;
+
+        margin-bottom: 25px;
+    }
+
+    .regalos-card p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+    .regalos-separador {
+        margin: 25px 0;
+    }
+
+    .regalos-final {
+        font-size: 19px !important;
+
+        line-height: 1.5;
+    }
+
+}
+/*=========================================*
+* HOSPEDAJE
+*=========================================*/
+
+#hospedaje {
+    width: 100%;
+    padding: 120px 20px;
+
+    box-sizing: border-box;
+
+    background: #faf8f5;
+
+    overflow: hidden;
+}
+
+/* =========================================
+   CONTENEDOR DE HOTELES
+========================================= */
+
+.hoteles-contenedor {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 60px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+/* =========================================
+   TARJETA HOTEL
+========================================= */
+
+.hotel-card {
+    width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+}
+
+/* =========================================
+   ICONO
+========================================= */
+
+.hotel-icono {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 50%;
+
+    color: #d4af37;
+
+    font-size: 24px;
+}
+
+/* =========================================
+   INFORMACIÓN
+========================================= */
+
+.hotel-info {
+    width: 100%;
+    min-width: 0;
+
+    box-sizing: border-box;
+}
+
+.hotel-info h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin-bottom: 18px;
+
+    overflow-wrap: anywhere;
+}
+
+.hotel-info p {
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    color: #2f3a32;
+
+    margin: 8px 0;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.hotel-info i {
+    color: #d4af37;
+
+    margin-right: 6px;
+}
+
+/* =========================================
+   BOTÓN HOTEL
+========================================= */
+
+.btn-hotel {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 11px 24px;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 30px;
+
+    color: #9c7b16;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    box-sizing: border-box;
+
+    max-width: 100%;
+
+    transition: all 0.3s ease;
+}
+
+.btn-hotel:hover {
+    background: #d4af37;
+
+    color: white;
+
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   HOSPEDAJE — CELULAR
+========================================= */
+
+@media (max-width: 768px) {
+
+    #hospedaje {
+        padding: 80px 15px;
+
+        width: 100%;
+
+        box-sizing: border-box;
+
+        overflow: hidden;
+    }
+
+    .hoteles-contenedor {
+        width: 100%;
+
+        max-width: 100%;
+
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 25px;
+
+        margin: 40px auto 0;
+    }
+
+    .hotel-card {
+        width: 100%;
+
+        max-width: 100%;
+
+        min-width: 0;
+
+        padding: 30px 20px;
+
+        box-sizing: border-box;
+    }
+
+    .hotel-icono {
+        width: 60px;
+        height: 60px;
+
+        font-size: 22px;
+    }
+
+    .hotel-info {
+        width: 100%;
+
+        max-width: 100%;
+
+        min-width: 0;
+    }
+
+    .hotel-info h3 {
+        font-size: 26px;
+
+        line-height: 1.2;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .hotel-info p {
+        font-size: 14px;
+
+        line-height: 1.6;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .btn-hotel {
+        max-width: 100%;
+    }
+
+}
+
+/*=========================================*
+* CIERRE DE LA INVITACIÓN *
+*=========================================*/
+
+#cierre {
+    position: relative;
+
+    min-height: 100vh;
+
+    padding: 140px 20px;
+
+    background: #faf8f5;
+
+    text-align: center;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.cierre-contenido {
+    width: 100%;
+    max-width: 700px;
+
+    margin: auto;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+/* =========================================
+   SUBTÍTULO
+========================================= */
+
+.cierre-subtitulo {
+    display: block;
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #d4af37;
+
+    font-weight: bold;
+}
+
+/* =========================================
+   ADORNO
+========================================= */
+
+.cierre-adorno {
+    margin: 30px 0;
+
+    color: #d4af37;
+
+    font-size: 22px;
+
+    letter-spacing: 8px;
+}
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.cierre-contenido h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 42px;
+
+    line-height: 1.25;
+
+    font-weight: 500;
+
+    color: #2f3a32;
+
+    margin: 0 auto 25px;
+}
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.cierre-contenido p {
+    width: 100%;
+    max-width: 580px;
+
+    margin: 0 auto;
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    color: #2f3a32;c
+}
+
+/* =========================================
+   LÍNEA
+========================================= */
+
+.cierre-linea {
+    width: 80px;
+
+    height: 1px;
+
+    background: #d4af37;
+
+    margin: 40px auto 25px;
+}
+
+/* =========================================
+   FIRMA
+========================================= */
+
+.cierre-firma {
+    display: block;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 20px;
+
+    color: #777;
+}
+
+/* =========================================
+   NOMBRE FINAL
+========================================= */
+
+.cierre-contenido h3 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 38px;
+
+    font-weight: 500;
+
+    color: #d4af37;
+
+    margin-top: 5px;
+}
+
+/* =========================================
+   FOTO DE DESPEDIDA
+========================================= */
+
+#fotoDespedida {
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
+
+    display: block;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* =========================================
+   FIRMA DEL CREADOR
+========================================= */
+
+.firma-creador {
+    position: absolute;
+
+    right: 35px;
+    bottom: 30px;
+
+    width: 150px;
+
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    animation:
+        aparecerFirma 1.5s ease forwards;
+
+    animation-delay: 0.5s;
+
+    z-index: 3;
+}
+
+.firma-creador img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+/* =========================================
+   ANIMACIÓN FIRMA
+========================================= */
+
+@keyframes aparecerFirma {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* =========================================
+   CIERRE — CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    #cierre {
+        min-height: 100vh;
+
+        padding: 100px 20px 130px;
+    }
+
+    .cierre-subtitulo {
+        font-size: 10px;
+
+        letter-spacing: 3px;
+    }
+
+    .cierre-adorno {
+        margin: 25px 0;
+
+        font-size: 20px;
+
+        letter-spacing: 6px;
+    }
+
+    .cierre-contenido h2 {
+        font-size: 34px;
+
+        line-height: 1.25;
+    }
+
+    .cierre-contenido p {
+        font-size: 14px;
+
+        line-height: 1.8;
+
+        padding: 0 5px;
+
+        box-sizing: border-box;
+    }
+
+    .cierre-linea {
+        margin: 30px auto 20px;
+    }
+
+    .cierre-firma {
+        font-size: 19px;
+    }
+
+    .cierre-contenido h3 {
+        font-size: 34px;
+    }
+
+    #fotoDespedida {
+        width: 130px;
+        height: 130px;
+
+        margin-bottom: 20px;
+    }
+
+    /* Firma Pola */
+
+    .firma-creador {
+        right: 50%;
+
+        bottom: 25px;
+
+        width: 120px;
+
+        transform: translateX(50%) translateY(20px);
+
+        animation:
+            aparecerFirmaMovil 1.5s ease forwards;
+
+        animation-delay: 0.5s;
+    }
+
+}
+
+/* =========================================
+   ANIMACIÓN FIRMA — CELULAR
+========================================= */
+
+@keyframes aparecerFirmaMovil {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateX(50%)
+            translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateX(50%)
+            translateY(0);
+    }
+
+}
+
+/* =========================================
+   PADRINOS - NOMBRAMIENTOS
+========================================= */
+
+#listaPadrinos {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 35px;
+}
+
+.padrino-card {
+    position: relative;
+    text-align: center;
+    padding: 28px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Detalle dorado superior */
+.padrino-card::before {
+    content: "✦";
+    display: block;
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* Línea dorada */
+.padrino-card::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 1px;
+    background: #d4af37;
+    margin: 18px auto 0;
+}
+
+/* Texto inicial */
+.texto-nombramiento {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #777;
+    margin: 0 0 8px;
+}
+
+/* Tipo de padrino */
+.padrino-card h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #91AD55;
+    margin: 0;
+}
+
+/* Nombre */
+.nombre-padrino {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    color: #2f3a32;
+    margin: 10px 0 0;
+    letter-spacing: 0.5px;
+}
+
+/* =========================================
+   CONFIRMACIÓN DE ASISTENCIA
+========================================= */
+
+#confirmacion {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#confirmacion .card-confirmacion {
+    max-width: 500px;
+    margin: 30px auto 0;
+    padding: 35px 25px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid rgba(212, 175, 55, 0.35);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+#confirmacion .card-confirmacion::before {
+    content: "✦";
+    display: block;
+    color: #d4af37;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#confirmacion .card-confirmacion p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 21px;
+    color: #2f3a32;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+/* Campo de nombre */
+
+#confirmacion #nombreInvitado {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 15px;
+    border: none;
+    border-bottom: 1px solid #d4af37;
+    background: transparent;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 19px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 25px;
+}
+
+#confirmacion #nombreInvitado::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Etiquetas */
+
+#confirmacion label {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #777;
+    margin: 15px 0 8px;
+}
+
+/* Contadores */
+
+#confirmacion .contador-personas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 15px;
+}
+
+#confirmacion .contador-personas button {
+    width: 34px;
+    height: 34px;
+    border: 1px solid #d4af37;
+    border-radius: 50%;
+    background: white;
+    color: #91AD55;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#confirmacion .contador-personas span {
+    min-width: 25px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 24px;
+    color: #2f3a32;
+}
+
+/* Botón */
+
+#confirmacion #confirmarWhatsapp {
+    margin-top: 20px;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: #d4af37;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#confirmacion #confirmarWhatsapp:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+}
+
+/* =========================================
+   PORTADA / CARRUSEL
+========================================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    text-align: center;
+}
+
+/* =========================================
+   FOTOGRAFÍAS
+========================================= */
+
+.hero-slider {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+
+    transform: scale(1);
+
+    transition:
+        opacity 1.5s ease-in-out,
+        transform 6s ease-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/* =========================================
+   OSCURECER FOTOGRAFÍA
+========================================= */
+
+.hero-slide::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.30);
+}
+
+/* =========================================
+   CORTE INFERIOR
+========================================= */
+
+.hero-slider::after {
+    content: "";
+
+    position: absolute;
+
+    left: -5%;
+    right: -5%;
+    bottom: -1px;
+
+    height: 18%;
+
+    background: #faf8f5;
+
+    z-index: 2;
+
+    clip-path: polygon(
+        0 35%,
+        8% 25%,
+        18% 30%,
+        28% 18%,
+        38% 25%,
+        48% 12%,
+        58% 20%,
+        68% 10%,
+        78% 22%,
+        88% 15%,
+        100% 25%,
+        100% 100%,
+        0 100%
+    );
+}
+
+/* =========================================
+   CONTENIDO DE PORTADA
+========================================= */
+
+.hero-contenido {
+    position: absolute;
+
+    top: 37%;
+    left: 0;
+
+    width: 100%;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+
+    z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    transform: translateY(-50%);
+}
+
+/* =========================================
+   DORADO ELEGANTE EN PORTADA
+========================================= */
+
+#tipoEvento,
+#nombreEvento,
+#fraseEvento {
+    color: #D4AF37;
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.55);
+}
+
+#btnInvitacion {
+    color: #D4AF37;
+    border: 1px solid #D4AF37;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   TIPO DE EVENTO
+========================================= */
+
+#tipoEvento {
+    font-family: 'Alex Brush', cursive !important;
+
+    font-size: clamp(10rem, 28vw, 19rem) !important;
+
+    font-weight: 400 !important;
+
+    line-height: 0.85 !important;
+
+    text-align: center !important;
+
+    letter-spacing: 1px !important;
+
+    margin: 50px 0 15px !important;
+
+    position: relative;
+
+    z-index: 10;
+
+    text-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   NOMBRE
+========================================= */
+
+#nombreEvento {
+    font-family: 'Cormorant Garamond', serif !important;
+
+    font-size: clamp(6rem, 18vw, 13rem) !important;
+
+    font-weight: 500 !important;
+
+    line-height: 0.95 !important;
+
+    text-align: center !important;
+
+    margin: 0 0 15px !important;
+
+    position: relative;
+
+    z-index: 10;
+
+    text-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   BOTÓN VER INVITACIÓN
+========================================= */
+
+#btnInvitacion {
+    position: relative;
+
+    z-index: 10;
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 30px;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 30px;
+
+    background: rgba(0, 0, 0, 0.20);
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+#btnInvitacion:hover {
+    background: #d4af37;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================================
+   FLECHA
+========================================= */
+
+.scroll-down {
+    position: absolute;
+
+    bottom: 95px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 4;
+
+    color: #d4af37;
+
+    font-size: 30px;
+
+    animation: flechaMovimiento 1.5s infinite;
+}
+
+@keyframes flechaMovimiento {
+
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 8px);
+    }
+
+}
+
+/* =========================================
+   LOGO POLA
+========================================= */
+
+.logo-pola {
+    position: absolute;
+
+    bottom: 30px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 4;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    opacity: 0;
+
+    animation: aparecerLogo 1.5s ease forwards;
+
+    animation-delay: 2s;
+}
+
+.logo-pola img {
+    width: 145px;
+
+    max-width: 40vw;
+
+    height: auto;
+
+    margin-bottom: 6px;
+
+    opacity: 0.95;
+}
+
+.logo-pola span {
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    color: white;
+
+    font-style: italic;
+}
+
+@keyframes aparecerLogo {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translate(-50%, 15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translate(-50%, 0);
+    }
+
+}
+
+/* =========================================
+   PORTADA — CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        height: 100svh;
+        min-height: 600px;
+    }
+
+    .hero-slide {
+        background-position: center;
+    }
+
+    .hero-slider::after {
+        height: 15%;
+
+        clip-path: polygon(
+            0 30%,
+            12% 22%,
+            25% 28%,
+            38% 16%,
+            50% 25%,
+            62% 12%,
+            75% 24%,
+            88% 17%,
+            100% 25%,
+            100% 100%,
+            0 100%
+        );
+    }
+
+    .hero-contenido {
+        top: 35%;
+        left: 0;
+
+        width: 100%;
+
+        padding: 0 20px;
+
+        box-sizing: border-box;
+
+        transform: translateY(-50%);
+    }
+
+    #tipoEvento {
+        font-size: clamp(3.5rem, 17vw, 5rem) !important;
+
+        margin: 30px 0 10px !important;
+    }
+
+    #nombreEvento {
+        font-size: clamp(2.5rem, 12vw, 4rem) !important;
+
+        margin: 0 0 10px !important;
+    }
+
+    #btnInvitacion {
+        margin-top: 20px;
+
+        padding: 11px 25px;
+
+        font-size: 11px;
+    }
+
+    .scroll-down {
+        bottom: 82px;
+
+        font-size: 26px;
+    }
+
+    .logo-pola {
+        bottom: 22px;
+    }
+
+    .logo-pola img {
+        width: 110px;
+    }
+
+    .logo-pola span {
+        font-size: 9px;
+
+        letter-spacing: 1px;
+    }
+
+}
+
+/* =========================================
+   BOTÓN VER INVITACIÓN
+========================================= */
+
+
+
+#btnInvitacion:hover {
+    background: #d4af37;
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+#btnInvitacion {
+    position: relative;
+    z-index: 4;
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 12px 30px;
+
+    border: 1px solid #d4af37;
+
+    border-radius: 30px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+    transition: all .3s ease;
+}
+
+/* =========================================
+   FLECHA
+========================================= */
+
+.scroll-down {
+    position: absolute;
+
+    bottom: 95px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 4;
+
+    color: #d4af37;
+
+    font-size: 30px;
+
+    animation: flechaMovimiento 1.5s infinite;
+}
+
+@keyframes flechaMovimiento {
+
+    0%, 100% {
+        transform: translate(-50%, 0);
+    }
+
+    50% {
+        transform: translate(-50%, 8px);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    #btnInvitacion {
+        margin-top: 20px;
+        padding: 11px 25px;
+        font-size: 11px;
+    }
+
+    .scroll-down {
+        bottom: 82px;
+        font-size: 26px;
+    }
+
+}
+
+
+/* =========================================
+   FIRMA DEL CREADOR - CIERRE
+========================================= */
+
+#cierre {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.firma-creador {
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    width: 150px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecerFirma 1.5s ease forwards;
+    animation-delay: 0.5s;
+}
+
+.firma-creador img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@keyframes aparecerFirma {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================
+   ESTILO PROTAGÓNICO PARA XV AÑOS / BODA
+========================================= */
+
+#tipoEvento {
+  font-family: 'Alex Brush', cursive !important;
+    font-size: clamp(4.5rem, 12vw, 8rem) !important;
+    font-weight: 400 !important;
+    line-height: 0.9 !important;
+    text-align: center !important;
+    letter-spacing: 1px !important;
+    margin: 50px 0 20px !important;
+    position: relative;
+    z-index: 10;
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
+}
+
+#nombreEvento {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: clamp(3rem, 8vw, 5.5rem) !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    text-align: center !important;
+    margin: 0 0 15px !important;
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 600px) {
+
+    #tipoEvento {
+        margin: 30px 0 10px !important;
+    }
+
+    #nombreEvento {
+        margin: 0 0 10px !important;
+    }
+
+}
+
+#fotoDespedida {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* =========================================
+   PORTADA — TIPOGRAFÍA DEFINITIVA
+========================================= */
+
+.hero-contenido #tipoEvento {
+    font-family: "Cormorant Garamond", serif !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+
+    font-size: clamp(1rem, 2.5vw, 1.5rem) !important;
+
+    letter-spacing: 7px !important;
+    line-height: 1.2 !important;
+
+    text-transform: uppercase !important;
+
+    margin: 0 0 10px !important;
+
+    text-align: center !important;
+}
+
+
+.hero-contenido #nombreEvento {
+    font-family: "Pinyon Script", cursive !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+
+    font-size: clamp(5rem, 13vw, 9rem) !important;
+
+    line-height: 0.85 !important;
+
+    letter-spacing: 1px !important;
+
+    margin: 0 0 18px !important;
+
+    text-align: center !important;
+}
+
+
+@media (max-width: 600px) {
+
+    .hero-contenido #tipoEvento {
+        font-size: 14px !important;
+        letter-spacing: 5px !important;
+    }
+
+    .hero-contenido #nombreEvento {
+        font-size: 68px !important;
+        line-height: 0.9 !important;
+    }
+
+}
+
+
+/* =========================================
+   PORTADA ABE & JESS
+   DISEÑO BLANCO Y VERDE MANZANA
+========================================= */
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    height: auto;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px 20px 45px;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(ellipse at 50% 35%, #ffffff 0%, #fffefa 65%, #f2f6e9 100%);
+
+    color: #596b43;
+}
+
+/* Ocultar carrusel anterior */
+.hero-slider {
+    display: none !important;
+}
+
+/* Contenido */
+.hero-contenido {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+
+    width: 100%;
+    max-width: 650px;
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 3;
+}
+
+/* NUESTRA BODA */
+.hero-contenido #tipoEvento {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: clamp(16px, 2.5vw, 21px) !important;
+    font-weight: 500 !important;
+    letter-spacing: 7px !important;
+    line-height: 1.4 !important;
+
+    color: #78934d !important;
+    text-shadow: none !important;
+
+    margin: 0 0 12px !important;
+}
+
+/* Nombres */
+.hero-contenido #nombreEvento {
+    font-family: 'Pinyon Script', cursive !important;
+    font-size: clamp(65px, 12vw, 105px) !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+
+    color: #718b48 !important;
+    text-shadow: none !important;
+
+    margin: 20px 0 22px !important;
+
+}
+
+/* Ocultar frase vacía */
+.hero-contenido #fraseEvento {
+    display: none;
+}
+
+/* Separador decorativo */
+.adorno-portada {
+    width: 90px;
+    height: 1px;
+    background: #a7bd79;
+    margin: 0 auto 25px;
+}
+
+/* Fecha */
+.fecha-portada {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 17px;
+    letter-spacing: 3px;
+    font-weight: 500;
+
+    color: #718b48;
+    margin: 0 0 12px;
+}
+
+/* FALTAN */
+.contador-portada h3 {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 36px;
+    font-weight: 400;
+
+    color: #718b48;
+    margin: 0 0 12px;
+}
+
+/* Contador horizontal */
+.contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(15px, 4vw, 35px);
+
+    width: 100%;
+}
+
+/* Cada número */
+.tiempo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 45px;
+}
+
+/* Números */
+.tiempo span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(30px, 5vw, 43px);
+    font-weight: 500;
+    line-height: 1;
+
+    color: #718b48;
+}
+
+/* Días, horas, minutos, segundos */
+.tiempo small {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #84936d;
+    margin-top: 7px;
+}
+
+.boton-musica-portada {
+    margin-top: 15px;
+    padding: 3px 8px;
+
+    border: 1px solid #9bb36e;
+    border-radius: 20px;
+
+    background: transparent;
+    color: #718b48;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    letter-spacing: 0.8px;
+
+    cursor: pointer;
+    line-height: 1.2;
+}
+
+/* Ver invitación */
+#btnInvitacion {
+    margin-top: 15px;
+    padding: 12px 30px;
+
+    border: 1px solid #8da65d;
+    border-radius: 30px;
+
+    background: #8da65d;
+    color: white;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-decoration: none;
+
+    transition: all .3s ease;
+}
+
+#btnInvitacion:hover {
+    background: #718b48;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+
+    .hero {
+        min-height: 100svh;
+        padding: 35px 15px;
+    }
+
+    .hero-contenido {
+        padding: 15px 5px;
+    }
+
+    .hero-contenido #tipoEvento {
+        font-size: 15px !important;
+        letter-spacing: 5px !important;
+    }
+
+    .hero-contenido #nombreEvento {
+        font-size: 68px !important;
+        margin-bottom: 18px !important;
+    }
+
+    .fecha-portada {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .contador-portada h3 {
+        font-size: 32px;
+    }
+
+    .contador {
+        gap: 13px;
+    }
+
+    .tiempo {
+        min-width: 42px;
+    }
+
+    .tiempo span {
+        font-size: 30px;
+    }
+
+    .tiempo small {
+        font-size: 8px;
+        letter-spacing: 0.5px;
+    }
+
+    .boton-musica-portada {
+    margin-top: 20px;
+    padding: 6px 12px;
+    font-size: 8px;
+
+}
+
+
+    /* =================================
+       AGENDA - CELULAR
+    ================================= */
+
+ 
+#agenda {
+    padding: 100px 20px;
+    background: #FFFEFC;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+   
+#agenda .timeline {
+    width: 100%;
+    max-width: 620px;
+    margin: 40px auto 0;
+    position: relative;
+    box-sizing: border-box;
+}
+
+
+    .timeline::before {
+        left: 43px;
+        width: 2px;
+    }
+
+    .evento {
+        display: grid;
+        grid-template-columns: 38px minmax(0, 1fr);
+        column-gap: 12px;
+        width: 100%;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+    }
+
+    .hora {
+        width: 38px;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 18px;
+        box-sizing: border-box;
+    }
+
+    .contenido {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        padding: 18px 16px;
+        border-radius: 16px;
+        overflow-wrap: break-word;
+    }
+
+    .contenido h3 {
+        font-size: 18px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .contenido p {
+        font-size: 14px;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+    }
+
+
+    /* =================================
+       CONFIRMACIÓN - CELULAR
+    ================================= */
+
+    #confirmacion {
+        padding: 80px 15px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    #confirmacion .card-confirmacion {
+        width: 100%;
+        max-width: 360px;
+        margin: 30px auto 0;
+        padding: 30px 20px;
+        box-sizing: border-box;
+    }
+
+    #confirmacion #nombreInvitado {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #confirmacion .contador-personas {
+        width: 100%;
+        gap: 18px;
+        box-sizing: border-box;
+    }
+
+    #confirmacion .contador-personas button {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        font-size: 17px;
+        flex-shrink: 0;
+    }
+
+    #confirmacion .contador-personas span {
+        min-width: 25px;
+        font-size: 22px;
+    }
+
+    #confirmacion #confirmarWhatsapp {
+        width: auto;
+        max-width: 100%;
+        padding: 11px 20px;
+        font-size: 11px;
+        box-sizing: border-box;
+    }
+
+}
+
+/* =========================================
+   TARJETAS CREMA SOBRE FONDO VERDE
+========================================= */
+
+.card-evento,
+.card-confirmacion,
+.familia-card,
+.padrino-card,
+.historia-card,
+.agenda-card,
+.regalo-card {
+    background:#f5f0e6;
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.10);
+}
+/* =========================================
+   GALERÍAS DE MI HISTORIA
+========================================= */
+
+.historia-galeria {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* FOTO PRINCIPAL */
+
+.historia-foto-principal {
+    width: 100%;
+    max-width: 350px;
+    height: 230px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    cursor: pointer;
+    background: #f5f2ed;
+}
+
+
+.historia-foto-principal:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+/* MINIATURAS */
+
+.historia-miniaturas {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    margin-top: 14px;
+    overflow-x: auto;
+    padding: 4px 2px 8px;
+    scrollbar-width: thin;
+}
+
+
+.historia-miniatura {
+    width: 68px;
+    height: 68px;
+    min-width: 68px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    opacity: 0.65;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+
+.historia-miniatura:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+
+/* MINIATURA SELECCIONADA */
+
+.historia-miniatura.activa {
+    opacity: 1;
+    border: 2px solid #d4af37;
+    transform: translateY(-2px);
+}
+
+
+/* BARRA DE DESPLAZAMIENTO */
+
+.historia-miniaturas::-webkit-scrollbar {
+    height: 5px;
+}
+
+.historia-miniaturas::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.20);
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media (max-width: 768px) {
+
+    .historia-foto-principal {
+        height: 300px;
+        border-radius: 20px;
+    }
+
+    .historia-miniaturas {
+        gap: 8px;
+        margin-top: 10px;
+    }
+
+    .historia-miniatura {
+        width: 58px;
+        height: 58px;
+        min-width: 58px;
+        border-radius: 10px;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES PEQUEÑOS
+========================================= */
+
+@media (max-width: 480px) {
+
+    .historia-foto-principal {
+        height: 250px;
+        border-radius: 18px;
+    }
+
+    .historia-miniatura {
+        width: 52px;
+        height: 52px;
+        min-width: 52px;
+    }
+
+}
+
+/* =========================================
+   HISTORIA - AJUSTE CELULAR
+========================================= */
+
+@media (max-width: 600px) {
+
+    #historia {
+        overflow: hidden;
+    }
+
+    .historia-contenedor {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .historia-item {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .historia-imagen {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* GALERÍAS DE NACIMIENTO E INFANCIA */
+
+    .historia-galeria {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+        overflow: hidden;
+    }
+
+    .historia-galeria img {
+        width: 100%;
+        max-width: 100%;
+        height: 145px;
+        object-fit: cover;
+        display: block;
+        border-radius: 12px;
+    }
+
+    /* FOTO GRANDE DE MIS XV */
+
+    .historia-item .historia-imagen > img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        border-radius: 15px;
+    }
+
+    /* EVITA QUE LA FOTO SE META EN LA LÍNEA */
+
+    .historia-item {
+        position: relative;
+        z-index: 1;
+    }
+
+    .historia-imagen {
+        position: relative;
+        z-index: 1;
+    }
+
+    .historia-texto {
+        position: relative;
+        z-index: 2;
+    }
+
+}
+
+/* =====================================
+   GALERÍA HISTORIA — CELULAR
+===================================== */
+
+.historia-foto-principal {
+
+    width: 100%;
+
+    height: 190px;
+
+    max-width: 100%;
+
+    border-radius: 14px;
+
+}
+
+
+.historia-miniaturas {
+
+    width: 100%;
+
+    max-width: 100%;
+
+    gap: 7px;
+
+    margin-top: 8px;
+
+    overflow-x: auto;
+
+    padding-bottom: 4px;
+
+}
+
+
+.historia-miniatura {
+
+    width: 65px;
+
+    min-width: 65px;
+
+    height: 65px;
+
+    border-radius: 8px;
+
+}
+
+#familia {
+    background: #FFFEFC; !important;
+}
+
+/* DECORACIÓN FLORAL DEL CONTADOR */
+#contador {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+#contador .flor-decorativa {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#contador .flor-superior {
+    top: 0;
+    right: 0;
+}
+
+#contador .flor-inferior {
+    bottom: 0;
+    left: 0;
+}
+
+/* FLORES - PAPÁS Y PADRINOS */
+#papas {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+#papas .flor-decorativa {
+    position: absolute;
+    width: 260px;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#papas .flor-superior {
+    top: 0;
+    right: 0;
+}
+
+#papas .flor-inferior {
+    bottom: 0;
+    left: 0;
+}
+
+/* FLORES - AGENDA */
+#agenda {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+#agenda .flor-decorativa {
+    position: absolute;
+    width: 260px;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#agenda .flor-superior {
+    top: 0;
+    right: 0;
+}
+
+#agenda .flor-inferior {
+    bottom: 0;
+    left: 0;
+}
+
+/* FLORES DECORATIVAS - CONFIRMACIÓN */
+
+#confirmacion {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+#confirmacion .flor-decorativa {
+    position: absolute;
+    width: 260px;
+    height: auto;
+    z-index: -1;
+    pointer-events: none;
+}
+
+#confirmacion .flor-superior {
+    top: 0;
+    right: 0;
+}
+
+#confirmacion .flor-inferior {
+    bottom: 0;
+    left: 0;
+}
+
+/* AJUSTE DE FLORES PARA CELULARES */
+
+@media (max-width: 600px) {
+
+    #contador .flor-decorativa,
+    #papas .flor-decorativa,
+    #agenda .flor-decorativa,
+    #confirmacion .flor-decorativa {
+        width: 125px;
+    }
+
+}
+
+/* AJUSTE DEL CONTADOR EN CELULARES */
+
+@media (max-width: 600px) {
+
+    #contador .flor-superior {
+        width: 95px;
+        top: 0;
+        right: 0;
+    }
+
+    #contador .fecha-decorada {
+        position: relative;
+        z-index: 2;
+        width: 85%;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px 8px;
+    }
+
+}
+
+/* Ajustes de flores en Padres y Padrinos */
+#papas .flor-superior {
+    width: 150px;
+    top: 0;
+    right: 0;
+}
+
+#papas .flor-inferior {
+    width: 150px;
+    bottom: 0;
+    left: 0;
+}
+
+/* Dar espacio al contenido para que no se encime con las flores */
+#papas .titulo-seccion {
+    position: relative;
+    z-index: 2;
+    padding-top: 35px;
+}
+
+#papas .familia-card,
+#papas .contenedor-padrinos {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 600px) {
+    #cierre .firma-creador {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 18px;
+        margin-top: 15px;
+    }
+
+    #cierre .firma-creador img {
+        width: 85px;
+        height: auto;
+    }
+}
+
+/* BAJAR TEXTOS DE PORTADA EN CELULAR */
+@media (max-width: 600px) {
+    .hero-contenido {
+        top: 48%;
+    }
+}
+
+/* BOTÓN DE MÚSICA EN PORTADA */
+
+.boton-musica-portada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 20px auto;
+    padding: 15px 28px;
+    background: #244C3A;
+    color: #D4AF62;
+    border: 1.5px solid #C6A04A;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.20);
+    transition: all 0.3s ease;
+}
+
+.boton-musica-portada i {
+    font-size: 38px;
+    animation: pulsoMusica 1.8s infinite;
+}
+
+.boton-musica-portada:hover {
+    background: #183629;
+    transform: scale(1.05);
+}
+
+@keyframes pulsoMusica {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.18);
+    }
+}
+
+.boton-musica-portada.reproduciendo {
+    background: #C6A04A;
+    color: #183629;
+}
+
+/* BOTÓN DE MÚSICA COMPACTO EN CELULARES */
+
+@media (max-width: 600px) {
+
+    .boton-musica-portada {
+        margin: 10px auto;
+        padding: 6px 13px;
+max-width: 180px;
+font-size: 8px;
+gap: 3px;
+        font-size: 9px;
+    }
+
+    .boton-musica-portada i {
+    font-size: 24px;
+}
+
+    .hero-contenido {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+
+/* =========================================
+   CONTADOR ABE & JESS - SIN RECUADROS
+========================================= */
+
+.contador-portada {
+    width: 100%;
+    margin: 10px auto 0;
+    text-align: center;
+}
+
+.contador-portada h3 {
+    font-family: 'Pinyon Script', cursive !important;
+    font-size: 30px !important;
+    font-weight: 400 !important;
+    color: #718b48 !important;
+    margin: 0 0 12px !important;
+}
+
+.contador {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    gap: 22px !important;
+    width: auto !important;
+    max-width: 340px;
+    margin: 0 auto !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+.contador .tiempo {
+    display: flex !important;
+    flex: 0 1 auto !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: 0 !important;
+    width: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+.contador .tiempo span {
+    font-family: 'Cormorant Garamond', serif !important;
+    font-size: 34px !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    color: #718b48 !important;
+
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.contador .tiempo small {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 9px !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px !important;
+    text-transform: uppercase !important;
+    color: #84936d !important;
+    margin-top: 5px !important;
+
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Ajuste para celular */
+@media (max-width: 600px) {
+    .contador {
+        gap: 16px !important;
+        max-width: 290px;
+    }
+
+    .contador .tiempo span {
+        font-size: 29px !important;
+    }
+
+    .contador .tiempo small {
+        font-size: 8px !important;
+        letter-spacing: 0.5px !important;
+    }
+}
+
+
+/* =========================================
+   TARJETAS INDIVIDUALES DE PADRINOS
+========================================= */
+
+#contenedorPadrinos,
+#listaPadrinos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin: 35px auto 0;
+}
+
+.padrino-card {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+
+    padding: 35px 25px;
+    margin: 0 auto;
+
+    background: #f5f0e6;
+    border: 1px solid rgba(212, 180, 92, 0.35);
+    border-radius: 18px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .padrino-card {
+        padding: 30px 18px;
+        border-radius: 15px;
+    }
+
+    #contenedorPadrinos,
+    #listaPadrinos {
+        gap: 20px;
+    }
+}
+
+/* CONTENEDOR DE FOTO Y FLORES */
+.contenedor-foto-ovalada {
+    position: relative;
+    width: 340px;
+    margin: 30px auto;
+}
+
+/* FOTO OVALADA DE LOS NOVIOS */
+.foto-ovalada-portada {
+    width: 260px;
+    height: 340px;
+    margin: 20px auto;
+    border: 5px solid #C6A04A;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px rgba(198, 160, 74, 0.20);
+    position: relative;
+    z-index: 1;
+}
+
+.foto-ovalada-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* FLORES ALREDEDOR DEL OVALO */
+.flor-ovalo {
+    position: absolute;
+    width: 210px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.flor-superior-derecha {
+    top: 0;
+    right: -5px;
+    transform: rotate(-25deg);
+}
+
+.flor-inferior-izquierda {
+    bottom: 0;
+    left: -5px;
+    transform: rotate(155deg);
+}
+
+/* MARCO DE FOTO Y FLORES */
+.marco-foto-portada {
+    position: relative;
+    width: 340px;
+    margin: 30px auto;
+}
+
+/* FOTO OVALADA */
+.foto-ovalada-portada {
+    width: 260px;
+    height: 340px;
+    margin: 20px auto;
+    border: 5px solid #C6A04A;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px rgba(198, 160, 74, 0.20);
+    position: relative;
+    z-index: 1;
+}
+
+.foto-ovalada-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* FLORES DEL OVALO */
+.flor-ovalo {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.flor-superior-derecha {
+    top: -50px;
+    right: -5px;
+    transform: rotate(-25deg);
+}
+
+.flor-inferior-izquierda {
+    bottom: 5px;
+    left: 15px;
+    transform: rotate(155deg);
+}
+
+/* CELULARES */
+@media (max-width: 600px) {
+    .flor-ovalo {
+        width: 125px;
+    }
+}
+
+    .flor-superior-derecha {
+        top: 5px;
+        right: 15px;
+    }
+
+    .flor-inferior-izquierda {
+        bottom: 5px;
+        left: 15px;
+    }
+}
+
+/* MARCO GEOMÉTRICO DORADO DE LA FOTO */
+.marco-foto-portada {
+    position: relative;
+    width: 340px;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+/* ESQUINAS DECORATIVAS */
+.marco-foto-portada::before,
+.marco-foto-portada::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-color: #C6A04A;
+    border-style: solid;
+    pointer-events: none;
+}
+
+/* ESQUINA SUPERIOR IZQUIERDA */
+.marco-foto-portada::before {
+    top: 0;
+    left: 0;
+    border-width: 2px 0 0 2px;
+}
+
+/* ESQUINA INFERIOR DERECHA */
+.marco-foto-portada::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 2px 2px 0;
+}
+
+/* FOTO OVALADA */
+.foto-ovalada-portada {
+    width: 260px;
+    height: 340px;
+    margin: 0 auto;
+    border: 3px solid #C6A04A;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 0 5px rgba(198, 160, 74, 0.15);
+    position: relative;
+    z-index: 1;
+}
+
+.foto-ovalada-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .marco-foto-portada {
+        width: 320px;
+    }
+
+    .foto-ovalada-portada {
+        width: 245px;
+        height: 320px;
+    }
+}
+
+
+/* =====================================
+   MARCO GEOMÉTRICO DE LA PORTADA
+===================================== */
+
+.hero {
+    position: relative;
+}
+
+/* Marco exterior */
+.marco-portada {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    right: 18px;
+    bottom: 18px;
+    border: 1px solid rgba(198, 160, 74, 0.55);
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Cuatro esquinas geométricas */
+.esquina-marco {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-color: #C6A04A;
+    border-style: solid;
+}
+
+/* Superior izquierda */
+.superior-izquierda {
+    top: -1px;
+    left: -1px;
+    border-width: 3px 0 0 3px;
+}
+
+/* Superior derecha */
+.superior-derecha {
+    top: -1px;
+    right: -1px;
+    border-width: 3px 3px 0 0;
+}
+
+/* Inferior izquierda */
+.inferior-izquierda {
+    bottom: -1px;
+    left: -1px;
+    border-width: 0 0 3px 3px;
+}
+
+/* Inferior derecha */
+.inferior-derecha {
+    bottom: -1px;
+    right: -1px;
+    border-width: 0 3px 3px 0;
+}
+
+/* El contenido queda delante del fondo */
+.hero-contenido {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+    .marco-portada {
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .esquina-marco {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* FOTO CON MARCO PNG */
+.foto-con-marco {
+    position: relative;
+    width: 340px;
+    height: 430px;
+    margin: 30px auto;
+}
+
+/* FOTOGRAFÍA */
+.foto-novios {
+    position: absolute;
+    width: 75%;
+    height: 80%;
+    top: 10%;
+    left: 12.5%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+}
+
+/* MARCO DECORATIVO PNG */
+.marco-png {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    object-position: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .foto-con-marco {
+        width: 300px;
+        height: 380px;
+    }
+}
+
+/* FOTOGRAFÍA OVALADA DE LOS NOVIOS */
+.foto-portada {
+    width: 280px;
+    height: 360px;
+    margin: 25px auto;
+    overflow: hidden;
+    border: 3px solid #C6A04A;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+.foto-portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .foto-portada {
+        width: 250px;
+        height: 330px;
+    }
+}
+
+/* NOMBRES DE LOS NOVIOS */
+#nombresNovios h2 {
+    color: #594536 !important;
+}
+
+/* TEXTO SUPERIOR E INFERIOR */
+#nombresNovios .titulo-seccion span {
+    color: #A8B86A;
+}
+
+/* FRASE DE LOS NOVIOS */
+#nombresNovios .titulo-seccion p {
+    color: #594536;
+}
+
+/* SEPARADOR DORADO */
+#nombresNovios .regalos-separador {
+    color: #C6A04A;
+}
+
+/* SECCIÓN RECEPCIÓN */
+#recepcion .titulo-seccion h2 {
+    color: #594536 !important;
+}
+
+#recepcion .titulo-seccion span {
+    color: #A8B86A !important;
+}
+
+/* =========================================
+   NUESTRA HISTORIA
+========================================= */
+
+/* Título principal */
+#historia .titulo-seccion h2 {
+    color: #594536 !important;
+}
+
+/* Texto superior */
+#historia .titulo-seccion span {
+    color: #A8B86A !important;
+}
+
+/* Subtítulos de la historia */
+#historia .titulo-seccion h3 {
+    color: #594536 !important;
+}
+
+/* Párrafos */
+#historia .titulo-seccion p {
+    color: #594536 !important;
+}
+
+/* Separadores */
+#historia .regalos-separador {
+    color: #C6A04A !important;
+}
+
+/* =========================================
+   PADRES Y PADRINOS
+========================================= */
+
+/* TITULOS PRINCIPALES */
+#papas .titulo-seccion h2 {
+    color: #594536 !important;
+}
+
+/* TEXTOS SUPERIORES */
+#papas .titulo-seccion span {
+    color: #A8B86A !important;
+}
+
+/* SUBTITULOS PADRES DE LA NOVIA Y NOVIO */
+#papas .familia-subtitulo {
+    color: #A8B86A !important;
+}
+
+/* NOMBRES DE LOS PADRES */
+#papas .familia-bloque h3 {
+    color: #594536 !important;
+}
+
+/* TEXTO DE AGRADECIMIENTO */
+#papas .familia-card p {
+    color: #594536 !important;
+}
+
+/* SEPARADORES */
+#papas .familia-separador {
+    color: #C6A04A !important;
+}
+
+/* =========================================
+   DETALLES PARA LOS NOVIOS
+========================================= */
+
+/* TITULO PRINCIPAL */
+#regalos .titulo-seccion h2 {
+    color: #594536 !important;
+}
+
+/* TEXTO SUPERIOR */
+#regalos .titulo-seccion span {
+    color: #A8B86A !important;
+}
+
+/* TEXTOS DE LA TARJETA */
+#regalos .regalos-card p {
+    color: #594536 !important;
+}
+
+/* ICONO DE REGALO */
+#regalos .regalos-icono {
+    color: #C6A04A !important;
+}
+
+/* SEPARADOR */
+#regalos .regalos-separador {
+    color: #C6A04A !important;
+}
+
+/* AGRADECIMIENTO FINAL */
+#regalos .regalos-final {
+    color: #594536 !important;
+}
+
+/* =========================================
+   AGENDA DEL EVENTO
+========================================= */
+
+/* TITULO PRINCIPAL */
+#agenda .titulo-seccion h2 {
+    color: #594536 !important;
+}
+
+/* TEXTO SUPERIOR */
+#agenda .titulo-seccion span {
+    color: #A8B86A !important;
+}
+
+/* ELEMENTOS DE LA AGENDA */
+#agenda .timeline {
+    color: #594536;
+}
+
+/* ICONOS Y DETALLES DORADOS */
+#agenda .timeline i {
+    color: #C6A04A;
+}
+
+/* =========================================
+   CONFIRMACION DE ASISTENCIA
+========================================= */
+
+/* TITULO PRINCIPAL */
+#confirmacion .titulo-seccion h2 {
+    color: #594536 !important;
+}
+
+/* TEXTO SUPERIOR */
+#confirmacion .titulo-seccion span {
+    color: #A8B86A !important;
+}
+
+/* TEXTO DESCRIPTIVO */
+#confirmacion .card-confirmacion p {
+    color: #594536 !important;
+}
+
+/* ETIQUETAS ADULTOS Y NIÑOS */
+#confirmacion .card-confirmacion label {
+    color: #594536 !important;
+}
+
+/* CAMPO DE NOMBRE */
+#confirmacion input {
+    color: #594536 !important;
+    background-color: #FAF8F0;
+    border-color: #C6A04A;
+}
+
+#confirmacion input::placeholder {
+    color: #8B806F !important;
+}
+
+/* CONTADORES */
+#confirmacion .contador-personas span {
+    color: #594536 !important;
+}
+
+#confirmacion .contador-personas button {
+    color: #FAF8F0 !important;
+    background-color: #A8B86A;
+}
+
+/* BOTON WHATSAPP */
+#confirmarWhatsapp {
+    color: #FAF8F0 !important;
+    background-color: #594536;
+    border-color: #C6A04A;
+}
+
+/* =========================================
+   CIERRE DE LA INVITACIÓN
+========================================= */
+
+/* SUBTITULO */
+#cierre .cierre-subtitulo {
+    color: #A8B86A !important;
+}
+
+/* ADORNO */
+#cierre .cierre-adorno {
+    color: #C6A04A !important;
+}
+
+/* FRASE PRINCIPAL */
+#cierre .cierre-contenido h2 {
+    color: #594536 !important;
+}
+
+/* PARRAFO */
+#cierre .cierre-contenido p {
+    color: #594536 !important;
+}
+
+/* LINEA DECORATIVA */
+#cierre .cierre-linea {
+    background-color: #C6A04A !important;
+}
+
+/* FIRMA */
+#cierre .cierre-firma {
+    color: #A8B86A !important;
+}
+
+/* NOMBRES DE LOS NOVIOS */
+#cierre #nombreCierre {
+    color: #594536 !important;
+}
+
+/* MARCO OVALADO DE LA FOTOGRAFÍA */
+.foto-portada {
+    width: 260px;
+    height: 340px;
+    margin: 25px auto;
+    padding: 7px;
+    position: relative;
+    border-radius: 50%;
+    background: #FAF8F0;
+    border: 2px solid #C6A04A;
+    box-shadow:
+        0 0 0 3px #FAF8F0,
+        0 0 0 5px #C6A04A,
+        0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+.foto-portada img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid #C6A04A;
+}
+
+/* MARCO ELEGANTE PARA LAS SECCIONES */
+#nombresNovios {
+    position: relative;
+    margin: 25px 15px;
+    padding: 35px 15px;
+    border: 2px solid #C6A04A;
+    outline: 1px solid #C6A04A;
+    outline-offset: 5px;
+    border-radius: 2px;
+    background: #FAF8F0;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* MARCO DORADO PARA LAS SECCIONES */
+#nombresNovios,
+#recepcion {
+    position: relative;
+    margin: 30px 15px;
+    padding: 35px 15px;
+
+    border: 2px solid #C6A04A;
+    outline: 1px solid #C6A04A;
+    outline-offset: 5px;
+
+    border-radius: 2px;
+    background: #FAF8F0;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* MARCO DORADO PARA LAS SECCIONES */
+#nombresNovios,
+#recepcion,
+#historia {
+    position: relative;
+    margin: 30px 15px;
+    padding: 35px 15px;
+
+    border: 2px solid #C6A04A;
+    outline: 1px solid #C6A04A;
+    outline-offset: 5px;
+
+    border-radius: 2px;
+    background: #FAF8F0;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* MARCO DORADO PARA LAS SECCIONES */
+#nombresNovios,
+#recepcion,
+#historia,
+#papas {
+    position: relative;
+    margin: 30px 15px;
+    padding: 35px 15px;
+
+    border: 2px solid #C6A04A;
+    outline: 1px solid #C6A04A;
+    outline-offset: 5px;
+
+    border-radius: 2px;
+    background: #FAF8F0;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* MARCO DORADO PARA LAS SECCIONES */
+#nombresNovios,
+#recepcion,
+#historia,
+#papas,
+#regalos {
+    position: relative;
+    margin: 30px 15px;
+    padding: 35px 15px;
+
+    border: 2px solid #C6A04A;
+    outline: 1px solid #C6A04A;
+    outline-offset: 5px;
+
+    border-radius: 2px;
+    background: #FAF8F0;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   MARCO DORADO PARA LAS SECCIONES
+========================================= */
+
+#nombresNovios,
+#recepcion,
+#historia,
+#papas,
+#regalos,
+#agenda {
+    position: relative;
+    margin: 30px 15px;
+    padding: 35px 15px;
+
+    border: 2px solid #C6A04A;
+    outline: 1px solid #C6A04A;
+    outline-offset: 5px;
+
+    border-radius: 2px;
+    background: #FAF8F0;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   MARCO DORADO PARA LAS SECCIONES
+========================================= */
+
+#nombresNovios,
+#recepcion,
+#historia,
+#papas,
+#regalos,
+#agenda,
+#confirmacion {
+    position: relative;
+    margin: 30px 15px;
+    padding: 35px 15px;
+
+    border: 2px solid #C6A04A;
+    outline: 1px solid #C6A04A;
+    outline-offset: 5px;
+
+    border-radius: 2px;
+    background: #FAF8F0;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   MARCO DORADO PARA LAS SECCIONES
+========================================= */
+
+#nombresNovios,
+#recepcion,
+#historia,
+#papas,
+#regalos,
+#agenda,
+#confirmacion,
+#cierre {
+    position: relative;
+    margin: 30px 15px;
+    padding: 35px 15px;
+
+    border: 2px solid #C6A04A;
+    outline: 1px solid #C6A04A;
+    outline-offset: 5px;
+
+    border-radius: 2px;
+    background: #FAF8F0;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================
+   RECUADROS DE LA AGENDA - VERDE MANZANA
+========================================= */
+
+#agenda .timeline .timeline-item {
+    background: #A8B86A;
+    border: 1px solid #879A50;
+    border-radius: 10px;
+}
+
+/* FORZAR TAMAÑO DEL BOTÓN DE MÚSICA */
+.hero .boton-musica-portada {
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: fit-content !important;
+
+    padding: 5px 10px !important;
+    margin: 15px auto 0 !important;
+
+    font-size: 8px !important;
+    line-height: 1.2 !important;
+    letter-spacing: 0.5px !important;
+
+    border-radius: 20px !important;
+}
+
+/* AJUSTE DE AGENDA PARA CELULARES */
+@media (max-width: 600px) {
+
+    #agenda {
+        padding: 70px 12px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .timeline {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .evento {
+        grid-template-columns: 65px minmax(0, 1fr);
+        column-gap: 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .timeline::before {
+        left: 75px;
+    }
+
+    .hora {
+        width: auto;
+        font-size: 12px;
+        text-align: right;
+    }
+
+    .contenido {
+        min-width: 0;
+        padding: 15px 12px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    .contenido h3 {
+        font-size: 16px;
+    }
+
+    .contenido p {
+        font-size: 13px;
+    }
+}
+
+/* RAMO FLORAL SOBRE EL OVALO */
+.ramo-portada {
+    display: block;
+    position: relative;
+    z-index: 10;
+
+    width: 300px;
+    max-width: 90%;
+    height: auto;
+
+    margin: 0 auto;
+    transform: translateY(-65px);
+
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .ramo-portada {
+        width: 260px;
+       margin-top: -85px;
+    }
+}
+
+/* CONTENEDOR DE FOTO Y RAMO */
+.foto-con-ramo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 65px;
+}
+
+/* FOTOGRAFÍA OVALADA */
+.foto-portada {
+    position: relative;
+    z-index: 1;
+}
+
+/* RAMO FLORAL INCLINADO */
+.foto-con-ramo .ramo-portada {
+    position: absolute;
+    z-index: 5;
+
+    width: 220px;
+    max-width: 75%;
+    height: auto;
+
+    bottom: -70px;
+    left: 41%;
+
+    transform: translateX(-50%) rotate(-12deg);
+
+    margin: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .foto-con-ramo .ramo-portada {
+        width: 195px;
+        max-width: 75%;
+        bottom: -53px;
+        transform: translateX(-50%) rotate(-12deg);
+    }
+}
+
+/* CENTRAR INVITACIÓN EN CELULARES */
+@media (max-width: 600px) {
+
+    .hero {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero-contenido {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .hero-contenido {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foto-con-ramo .ramo-portada {
+        left: 45%;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .hero-contenido {
+        position: relative;
+        left: 5px;
+    }
+}
