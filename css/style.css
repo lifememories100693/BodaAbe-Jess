@@ -5271,3 +5271,70 @@ gap: 3px;
         left: 5px;
     }
 }
+
+/* =====================================
+   AJUSTES PARA CELULARES
+===================================== */
+
+@media (max-width: 768px) {
+
+    /* SECCIÓN 2: NOMBRES DE LOS NOVIOS */
+    #nombresNovios h2 {
+        font-size: 30px !important;
+        line-height: 1.2;
+        padding: 0 15px;
+    }
+
+        /* PORTADA: NOMBRES EN UNA SOLA LÍNEA */
+    #nombreEvento {
+        font-size: 34px !important;
+        white-space: nowrap;
+        line-height: 1.2;
+    }
+
+        /* CONFIRMACIÓN: TÍTULO MÁS PEQUEÑO */
+    #confirmacion .titulo-seccion h2 {
+        font-size: 28px !important;
+        line-height: 1.2;
+        padding: 0 10px;
+        overflow-wrap: break-word;
+    }
+
+         /* AGENDA: CENTRADA Y CON MARGENES */
+    #agenda {
+        padding: 70px 15px;
+        box-sizing: border-box;
+    }
+
+    #agenda .timeline {
+        width: 90%;
+        max-width: 500px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    #agenda .evento {
+        grid-template-columns: 65px minmax(0, 1fr);
+        column-gap: 12px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #agenda .hora {
+        width: auto;
+        font-size: 12px;
+        text-align: right;
+    }
+
+    #agenda .contenido {
+        min-width: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    #agenda .timeline::before {
+        left: 75px;
+    }
+
+}
